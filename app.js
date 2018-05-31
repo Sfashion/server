@@ -27,6 +27,7 @@ var order = require('./routes/admin/MSorder');
 var comments = require('./routes/admin/MScomments');
 var admin = require('./routes/admin/MSadmin');
 var user = require('./routes/admin/MSuser');
+var banner = require('./routes/admin/MSbanner');
 app.use('/api/admin/login', login);
 app.use('/api/admin/category', cate);
 app.use('/api/admin/goods', goods);
@@ -34,6 +35,7 @@ app.use('/api/admin/order', order);
 app.use('/api/admin/comments', comments);
 app.use('/api/admin/user', user);
 app.use('/api/admin/admin', admin);
+app.use('/api/admin/banner', banner);
 
 //前台
 var index = require('./routes/index/index');
